@@ -1,10 +1,8 @@
 name: Docker Image CI
 
 on:
-  push:
-    branches: [ latest ]
-  pull_request:
-    branches: [ latest ]
+  release:
+    types: [published]
 
 jobs:
   push_to_registry:
