@@ -2,6 +2,8 @@ FROM ubuntu
 
 COPY --chown=nobody:users startup.sh /etc/trash/startup.sh
 
+RUN chmod -R 770 /etc/trash
+
 RUN  apt-get update \
   && apt-get install -y wget \
   && apt-get install -y zip \
