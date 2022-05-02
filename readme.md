@@ -2,4 +2,4 @@ This docker includes the trash-updater binary (https://github.com/rcdailey/trash
 
 This is autobuilt and published on new releases from the main project
 
-https://hub.docker.com/repository/docker/clintkev251/trash-updater
+https://hub.docker.com/r/clintkev251/trash-updater
