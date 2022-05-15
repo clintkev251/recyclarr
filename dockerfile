@@ -10,7 +10,7 @@ RUN  apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN cd /etc/trash \
-  && wget -O trash.zip https://github.com/rcdailey/recyclarr/releases/latest/download/recyclarr-linux-x64.zip && unzip -o trash.zip && rm trash.zip && chmod u+rx trash
+  && wget -O trash.zip https://github.com/rcdailey/recyclarr/releases/latest/download/recyclarr-linux-x64.zip && unzip -o trash.zip && rm trash.zip && chmod u+rx  recyclarr
 
 RUN mkdir /etc/trash/config
 
