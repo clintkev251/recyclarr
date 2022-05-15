@@ -6,9 +6,9 @@ export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 CONFIG=./config/trash.yml
 if test ! -f "$CONFIG"; then
-    ./recyclarr create-config --path ./config/trash.yml
+    ./recyclarr create-config --path ./config/recyclarr.yml
 else
-    ./recyclarr radarr --config ./config/trash.yml
-    ./recyclarr sonarr --config ./config/trash.yml
+    ./recyclarr radarr --config ./config/recyclarr.yml
+    ./recyclarr sonarr --config ./config/recyclarr.yml
 fi
 # tail -f /dev/null
