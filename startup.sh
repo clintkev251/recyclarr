@@ -4,7 +4,7 @@ cd /etc/trash
 
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
-CONFIG=./config/trash.yml
+CONFIG=./config/recyclarr.yml
 if test ! -f "$CONFIG"; then
     ./recyclarr create-config --path ./config/recyclarr.yml
 else
