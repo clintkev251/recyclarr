@@ -11,4 +11,4 @@ else
     ./recyclarr-exec radarr --config ./config/recyclarr.yml
     ./recyclarr-exec sonarr --config ./config/recyclarr.yml
 fi
-tail -f /dev/null
+# tail -f /dev/null
