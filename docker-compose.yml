@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  recyclarr:
+    image: clintkev251/recyclarr:latest
+    volumes:
+      - /path/to/config/on/host:/etc/trash/config
