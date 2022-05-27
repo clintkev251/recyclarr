@@ -1,4 +1,17 @@
-This docker includes the recyclarr binary (https://github.com/recyclarr/recyclarr). On startup it will check for a trash.yml config at /etc/trash/config. If it doesn't exist it will use the recyclarr create-config command to create it, then exit. You should map this to a path on your local server so that you can edit it and it persists. On subsequent startups, the container will run both recyclarr radarr and recyclarr sonarr. You should schedule the container to run on a cron schedule as needed. It will exit after processing is completed.
+This docker includes the recyclarr binary (https://github.com/recyclarr/recyclarr). 
+
+### Instalation
+You can see the below docker compose file for a minimal example on how to deploy this:
+```
+version: "3.9"
+services:
+  recyclarr:
+    image: clintkev251/recyclarr:latest
+    volumes:
+      - /path/to/config/on/host:/etc/trash/config
+```
+### Usage
+On first run, the script will look for a config file in your mapped config directory. If one does not exist it will create one and exit. You can edit this file to point to your radarr and sonarr instances and use the desired profiles. On subsequent starts, `recyclarr radarr` and `recyclarr sonarr` will be run and the container will exit. You can write a simple script to start the container at your desired interval to update profiles.
 
 This is autobuilt and published on new releases from the main project
 
