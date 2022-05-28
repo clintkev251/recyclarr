@@ -4,3 +4,6 @@ services:
     image: clintkev251/recyclarr:latest
     volumes:
       - /path/to/config/on/host:/etc/trash/config
+    environment:
+      RUN_RADARR: true  # Optional - If unset, defaults to true
+      RUN_SONARR: true  # Optional - If unset, defaults to true
