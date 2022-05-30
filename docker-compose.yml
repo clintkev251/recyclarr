@@ -7,3 +7,4 @@ services:
     environment:
       RUN_RADARR: true  # Optional - If unset, defaults to true
       RUN_SONARR: true  # Optional - If unset, defaults to true
+      CRON_EXPRESSION: "0 15 * * *" # Optional - The cron expression that determines when the script will be run. If unset, scripts will be run at startup of container
