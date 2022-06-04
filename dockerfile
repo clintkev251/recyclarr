@@ -2,6 +2,8 @@ FROM debian:stretch
 
 COPY --chown=nobody:users startup.sh /etc/trash/startup.sh
 
+RUN mkdir /etc/trash/config
+
 RUN chmod -R 770 /etc/trash
 
 RUN  apt-get update \
@@ -16,6 +18,5 @@ RUN cd /etc/trash \
 
 RUN export XDG_CONFIG_HOME=$HOME/.config
 
-RUN mkdir /etc/trash/config
-
 ENTRYPOINT [ "/etc/trash/startup.sh" ]
+# CMD tail -f /dev/null
