@@ -1,3 +1,5 @@
+## NOTICE: This image is now depricated. Recyclarr now maintains an official image which you should use instead. 
+
 This docker includes the recyclarr binary (https://github.com/recyclarr/recyclarr). 
 
 ### Instalation
